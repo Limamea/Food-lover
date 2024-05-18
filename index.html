@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    *{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+#container{
+  background-image:url("photo/home_bg.jpeg");
+  background-attachment:fixed;
+  background-size:contain;
+  background-repeat:no-repeat;
+  width:100vw;
+}
+.n1{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background-color:rgba(1,1,1,15%);
+  margin:0px 15px ;
+  background-attachment:fixed;
+}
+.n1 img{
+  width:50px;
+}
+.n2 a{
+  text-decoration:none;
+  margin-left:10px;
+  color:white;
+
+}
+.n2 a:hover{
+  border-bottom:3px solid orange;
+}
+.n3{
+  text-align:center;
+  margin:25px 0px;
+  color:white;
+
+}
+.n3 h1{
+  font-size:22px;
+}
+.n3 h1 span{
+  color:orange;
+}
+.n3 p{
+  font-size:10px;
+  margin-top:10px;
+  margin-bottom:35px;
+}
+.n3 a{
+  display:inline-block;
+  text-decoration:none;
+  color:white;
+  border-radius:20px;
+  border:3px solid black;
+  padding:10px;
+  margin-bottom:50px;
+}
+.n3 a:hover{
+  background-color:orange;
+}
+#container2{
+  color:black;
+  margin:0px 15px;
+  margin-bottom:40px;
+}
+#container2 h2{
+  text-align:center;
+  color:black;
+  font-weight:400;
+  font-size:30px;
+  margin-bottom:10px;
+}
+#container2 .n7{
+  text-align:center;
+  color:gray;
+}
+.n5 .n6{
+  color:gray;
+  float:left;
+  margin-top:25px;
+}
+
+.n5 a{
+  display:inline-block;
+  border-radius:10px;
+  color:white;
+  text-decoration:none;
+  background-color:#5D6299;
+  padding:10px;
+  margin-top:20px;
+  transition:1s ease;
+}
+  .n5 a:hover{
+  background-color:white;
+  color:black;
+  transform:scale(1.1);
+}
+.n8 img{
+  display:inline-block;
+  margin-bottom:10px;
+  background-color:#ECB966;
+  background-attachment:fixed;
+  width:225px;
+  float:right;
+  border-radius:20px;
+}
+
+#container3{
+  background-image:url("photo/offer-background.jpg");
+  width:100vw;
+  /*max-height:65vh;*/
+ max-height:100%;
+  margin-top:250px;
+  color:white;
+  text-align:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  padding-bottom:30px;
+}
+#container3 h3{
+  display:inline-block;
+  margin-top:30px;
+  font-size:35px;
+  font-weight:300;
+  color:#FFBB00;
+  margin-bottom:16px;
+  
+}
+#container3 p{
+  font-size:10px;
+}
+.n9{
+display:flex;  
+justify-content:space-between;
+ margin-right:10px ;
+margin-left:10px;
+
+}
+.n9 img{
+  width:99px;
+  margin-top:50px;
+  margin-left:5px;
+  margin-right:5px;
+flex-direction:row;
+}
+.n9 h4,h5,h6{
+  margin-top:10px ;
+  margin-bottom:10px ;
+  font-size:15px;
+}
+.n9 p{
+  font-size:5px;
+  font-weight:200;
+}
+.l1:hover,.l2:hover,.l3:hover{
+  border:3px solid #00B6FF;
+  border-radius:30px;
+}
+.l1,.l2,.l3{
+  padding-top:30px;
+}
+.n9 p span{
+  color:#F7B81A;
+}
+#container4{
+margin:0px 20px;
+}
+#container4 img{
+  width:110px;
+}
+.z1{
+  
+}
+.c1,.c2,.c3,.c4,.c5,.c6 {
+  display:flex;
+  margin-bottom:10px
+}
+.c1 p,.c2 p,.c3 p,.c4 p,.c5 p,.c6 p{
+  border-top:1px solid black ;
+text-align:center;
+  margin-top:5px;
+  padding-top:5px;
+}
+.c1:hover,.c2:hover,.c3:hover,.c4:hover,.c5:hover,.c6:hover{
+  border:3px solid black;
+  border-radius:10px;
+  
+}
+.c7:hover,.c8:hover,.c9:hover,.c10:hover,.c11:hover,.c12:hover{
+  border:3px solid black;
+  border-radius:10px;
+}
+
+.z2{
+  
+  margin-right:2.5px;
+}
+.c7,.c8,.c9,.c10,.c11,.c12 {
+  display:flex;
+  margin-bottom:10px
+}
+.c7 p,.c8 p,.c9 p,.c10 p,.c11 p,.c12 p{
+  border-top:1px solid black ;
+  text-align:center;
+  margin-top:5px;
+  padding-top:5px;
+}
+.zz1 h4{
+  margin-left:10px;
+}
+.zz1 h6{
+  float:right;
+  color:#FFB424;
+  font-size:15px;
+  font-weight:900;
+}
+.zz1{
+   margin-top:50px;
+}
+.x1 h3{
+  text-align:center;
+  color:#00366B;
+  margin:10px 0px;
+  font-size:26px;
+}
+.x1 p{
+ margin-bottom:10px;
+text-align:center;
+color:rgba(1,1,1,90%);
+font-size:10px;
+}
+.n8848 input{
+float:right;
+margin-bottom:px;
+}
+#container4 .z-z a{
+  display:flex;
+  justify-content:center;
+  text-decoration:none;
+  margin-top:30px;
+  background-color:rgb(1,2,3);
+  margin-left:87px;
+  margin-right:87px;
+  color:white;
+  border-radius:10px;
+  transition:1s ease;
+  padding:10px;
+  margin-bottom:40px;
+}
+#container4 .z-z a:hover{
+  background-color:white;
+  transform:scale(1.1);
+  color:black;
+}
+
+#container5{
+  background-image:url(photo/daytime_bg.jpeg);
+  width:100vw;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:30px 0px;
+}
+.mp4{
+  display:flex;
+  justify-content:center;
+  color:white;
+  flex-wrap:wrap;
+}
+#container5 img{
+  width:55px;
+  margin:0px 30px;
+  margin-bottom:10px;
+}
+#container5 h1{
+  font-size:20px;
+  text-align:center;
+}
+#container5 p{
+  font-size:10px;
+  text-align:center;
+}
+.f2 img{
+  padding-bottom:20px;
+}
+.f2{
+  margin-bottom:20px;
+}
+.f3 img{
+}
+
+
+#and{
+  background-image:url("photo/offer-background.jpg");
+  width:100vw;
+  padding-bottom:20px;
+}
+.t56{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.r45{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+#and h2{
+  padding-top:50px;
+  padding-bottom:25px;
+  text-align:center;
+}
+.to1 img{
+  width:100px;
+  height:50px;
+  margin:7.5px;
+  border-radius:10px;
+  opacity:0.8;
+  transition:0.7s ease;
+}
+.to1 img:hover{
+  opacity:2;
+}
+#contact{
+  margin-top:75px;
+  margin-left:20px;
+  margin-right:20px;
+}
+.limamee{
+  margin-right:70px;
+}
+.limamee h2{
+  font-size:30px;
+  text-align:center;
+  margin-bottom:10px;
+  text-transform:uppercase;
+}
+.limamee img{
+  width:15px;
+  margin:5px 0px;
+}
+.limamee .blue{
+  display:flex;
+  align-items:center;
+}
+.limamee .blue p{
+    margin-left:5px;
+}
+.limamee .black{
+  display:flex;
+  align-items:center;
+}
+.limamee .black p{
+    margin-left:5px;
+}
+
+.limamee .green{
+  display:flex;
+  align-items:center;
+}
+.limamee .green p{
+    margin-left:5px;
+}
+
+.mohamed{
+  margin-right:20px;
+  margin:20px 0px;
+}
+.mohamed h1{
+  text-transform:uppercase;
+  font-size:30px;
+  margin-bottom:10px;
+  text-align:center;
+}
+.mohamed p{
+  margin:5px 0px;
+}
+.oumar{
+  margin-right:20px;
+  margin:20px 0px;
+}
+.oumar h3{
+text-transform:uppercase;
+font-size:30px;  
+margin-bottom:10px;
+  text-align:center;
+}
+.oumar img{
+  margin:5px;
+  width:30px;
+}
+.contact1 input,.contact1 textarea{
+  width:300px;
+  margin-top:15px;
+  background-color:rgb(127,149,255);
+  border:0px solid rgb(127,149,255);
+  border-radius:10px;
+  padding:7.5px;
+  margin-bottom:20px;
+}
+.contact1 button{
+  padding:5px;
+  background-color:rgb(152,202,255);
+  border:0px;
+  border-radius:10px;
+  margin-left:20px;
+}
+hr{
+  width:300px;
+}
+  </style>
+  <title>food lover</title>
+</head>
+<body>
+<div id="container">
+  <div class="n1">
+    <img src="photo/logo.png" alt="logo">
+    <div class="n2">
+      <a href="#">home</a>
+      <a href="#container2">about</a>
+      <a href="#container4">menu</a>
+      <a href="#and">gallery</a>
+      <a href="#contact">contact</a>
+    </div>
+ </div>
+  <div class="n3">
+  <h1>welcome to <span>food lover</span> restaurant</h1>
+  <p>here you can find most delicacies food in the</p>
+  
+  <a href="#">BOOK A table</a>
+ </div>
+</div>
+<div id="container2">
+  <div class="n4">
+ <h2>the food lover history</h2>
+ <p class="n7">mor than 25+ years of experience</p>
+ <div class="n5">
+   <p class="n6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nam, corporis consectetur rem asperiores dolores, soluta hic velit magni nisi fuga quia nihil. Libero laborum, ducimus amet qui maiores. Ullam maiores quam impedit explicabo, nostrum, tenetur fugit tempora quibusdam deserunt eius dolores modi illo qui minus vitae suscipit unde nulla.<br>
+   <br>
+   Perspiciatis qui, aliquid blanditiis id expedita ea minima eos, enim fugiat distinctio magnam adipisci. Vero, accusantium itaque quibusdam, neque repellat eius veniam consectetur totam nesciunt est consequatur veritatis architecto dolorem beatae optio. Nulla enim harum pariatur vitae laborum impedit debitis ex velit. Eos obcaecati, dolore suscipit consectetur rem. Perspiciatis, libero?</p>
+   
+   <a href="#">learn more</a>
+   </div>
+  </div>
+  <div class="n8">
+    <img src="photo/about_img.png">
+  </div>
+</div>
+<div id="container3">
+  <h3>our special offers</h3>
+  <p>mor than 25+ years of experience</p>
+  <div class="n9">
+    <div class="l1">
+    <img src="photo/offer1.png" class="">
+    <h5>Quattro pasta</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste nemo porro quaerat!<br>
+    <br>
+     <s>$ 60.00</s> <b><span>$28.00</span></b></p>
+    </div>
+    <div class="l2">
+    <img src="photo/offer2.png" class="n0">
+    <h4>vgertian pasta</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis nobis neque corporis.<br>
+    <br>
+     <s>$ 60.00</s> <b><span>$28.00</span></b></p>
+    </div>
+    <div class="l3">
+    <img src="photo/offer3.png"class="n">
+    <h6>gluten-free pasta</h6>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed eos beatae cupiditate.<br>
+    <br>
+    <s>$ 60.00</s> <b><span>$28.00</span></b></p>
+    </l3>
+  </div>
+</div>
+</div>
+<div id="container4">
+
+  <div class="x1">
+    <h3>our special offers</h3>
+    <p>order towand get third for free</p>
+  </div>
+  <div class="n8848"><form><input type="search" placeholder="search..."></form></div>
+  <div class="zz1">
+  <div class="z1">
+    <div class="c1">
+    <img src="photo/food1.png">
+    <div>
+      <h6>$32.00</h6>
+    <h4>lasal cheese</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, ducimus?</p>
+    </div>
+    </div>
+    <div class="c2">
+    <img src="photo/food2.png">
+    <div>
+      <h6>$22.00</h6>
+    <h4>jumbo crab </h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, ducimus?</p>
+    </div>
+    </div>
+    <div class="c3">
+    <img src="photo/food3.png">
+    <div>
+      <h6>$42.00</h6>
+    <h4>koktail jucie</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, ducimus?</p>
+    </div>
+    </div>
+    <div class="c4">
+    <img src="photo/food4.png">
+    <div>
+      <h6>$23.00</h6>
+    <h4>capo steak</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, ducimus?</p>
+    </div>
+    </div>
+    <div class="c5">
+    <img src="photo/food5.png">
+    <div>
+      <h6>$22.50</h6>
+    <h4>organic fruit salad</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, ducimus?</p>
+    </div>
+    </div>
+    <div class="c6">
+    <img src="photo/food6.png">
+    <div>
+      <h6>$22.00</h6>
+    <h4>cheese pizza</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, ducimus?</p>
+    </div>
+    </div>
+  </div>
+  <div class="z2">
+    <div class="c7">
+      <img src="photo/food7.jpeg">
+      <div>
+      <h6>$12.00</h6>
+        <h4>kofta meat</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, ducimus?</p>
+      </div>
+    </div>
+    <div class="c8">
+      <img src="photo/food8.jpeg">
+      <div>
+      <h6>$32.00</h6>
+        <h4>Spanish pies</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, ducimus?</p>
+      </div>
+    </div>
+    <div class="c9">
+      <img src="photo/food9.jpeg">
+      <div>
+      <h6>$22.00</h6>
+        <h4>cheese tost</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, ducimus?</p>
+      </div>
+    </div>
+    <div class="c10">
+      <img src="photo/food10.jpeg">
+      <div>
+      <h6>$22.95</h6>
+        <h4>fruit salad</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, ducimus?</p>
+      </div>
+    </div>
+    <div class="c11">
+      <img src="photo/food11.jpeg">
+      <div>
+      <h6>$22.05</h6>
+        <h4>chicken shwarma</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, ducimus?</p>
+      </div>
+    </div>
+    <div class="c12">
+      <img src="photo/food12.jpeg">
+      <div>
+      <h6>$40.99</h6>
+      <h4>mega cheese pizza</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, ducimus?</p>
+    </div>
+  
+  
+</div>
+</div>
+  </div>
+  <div class="z-z"><a href="#">explore full menu</a></div>
+</div>
+<div id="container5">
+  <div class="mp4">
+  <div class="f">
+  <img src="photo/breckfastIcon.png" alt="sorry">
+  <h1>breakfast</h1>
+  <p>8:00 am to 10:00 am</p>
+  </div>
+  <div class="f1">
+  <img src="photo/lunchIcon.png" alt="sorry">
+  <h1>lunche</h1>
+  <p>4:00 pm to 7:00 pm</p>
+  </div>
+  <div class="f2">
+  <img src="photo/dinnerIcon.png" alt="sorry">
+  <h1>dinner</h1>
+  <p>9:00 pm to 1:00 am</p>
+  </div>
+  <div class="f3"><img src="photo/dessertIcon.png" alt="sorry">
+  <h1>dessert</h1>
+  <p>all day</p>
+  </div>
+</div>
+</div>
+<div id="and">
+  <h2>our food gallery</h2>
+ <div class="to1">
+   <div class="t56">
+   <img src="photo/gallery1.jpeg">
+   <img src="photo/gallery2.jpeg">
+   <img src="photo/gallery3.jpeg">
+   </div>
+   <div class="r45">
+   <img src="photo/gallery4.jpeg">
+   <img src="photo/gallery5.jpeg">
+   <img src="photo/gallery6.jpeg">
+   </div>
+ </div>
+</div>
+<div id="contact">
+<div class="limamee">
+ <h2>address</h2>
+    <div class="blue">
+    <img src="photo/Up.jpg" alt="sorry">
+    <div><p>hosary mosque.6 October. Egypt</p></div>
+    </div>
+    <div class="black">
+      <img src="photo/USA.png" alt="sorry">
+      <p>phone: 31189578</p>
+    </div>
+    <div class="green">
+      <img src="photo/tre.jpg">
+      <p>example@gmail.com</p>
+    </div>
+    <div class="mohamed">
+      <h1>working hours</h1>
+      <p>8:00am to 11:00pm on weekdays</p>
+      <p>11:00am to 1:00am on weekdays</p>
+    </div>
+    <div class="oumar">
+      <h3>follow us</h3>
+      <a href="#"><img src="photo/Jim.png"></a>
+      <a href="#"><img src="photo/Jim's.png"></a>
+      <a href="#"><img src="photo/Ll.png"></a>
+    </div>
+    
+    <div class="contact1">
+      <form>
+        <input type="text" placeholder="full name" minlength="2" maxlength="20" required>
+        <input type="email" placeholder="email address" required>
+        <input type="text" placeholder="object" required minlength="4" maxlength="20">
+        <textarea rows="10px" placeholder="message" required ></textarea>
+        <button type="submit">send message</button>
+      </form>
+    </div>
+  </div>
+  
+</div>
+</body>
+
+</html>
